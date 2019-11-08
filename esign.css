@@ -6,8 +6,10 @@ https://doublepicebs.github.io/esign
 
 */
 
+@import url('https://fonts.googleapis.com/css?family=Harmattan|Raleway&display=swap');
 
 body {
+  font-family: 'Raleway', serif;
   font-size: 14px;
   color: #424242;
   margin: 0;
@@ -87,6 +89,10 @@ body {
 
 
 /*TYPOGRAPHY*/
+
+.es-arabic {
+  font-family: 'Harmattan', serif ;
+}
 
 .es-title {
   color: black;
