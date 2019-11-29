@@ -1,0 +1,420 @@
+/*
+
+AROMA CSS LIBRARY
+By ©2019-NOW Doublepicebs
+https://aromacss.glitch.me
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato&Almarai&display=swap');
+
+
+/*VAR*/
+:root {
+  --primary: #2979ff;
+  --primary-light: #82b1ff;
+  --primary-bg-light: aliceblue;
+  --basic-bg: #fafafa;
+  --text-color: #424242;
+  --red-bg: #ffd6d6;
+  --shadow-color: #E0E0E0;
+  --footer-bg: black;
+  --footer-color: white;
+  --progress-bar-bg: #E0E0E0;
+}
+
+
+/*BODY*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.arc-body-dark {
+  color: var(light);
+  background-color: #212121;
+}
+
+.arc-body-light {
+  background-color: var(basic-bg);
+  color: #424242;
+}
+
+
+/*KEYFRAMES*/
+
+/*buttonHover*/
+@keyframes buttonHover {
+  from{}
+  to{
+    background-color: #7dafff;
+    color: #424242;
+  }
+}
+
+/*shadowOnHover*/
+@keyframes shadowOnHover {
+  from{}
+  to{ box-shadow: 0 4px 8px 0 var(--shadow-color);}
+}
+
+/*MAIN*/
+
+.arc-main {
+  padding: 5px;
+  max-width: 100%;
+}
+
+
+/*NAVBAR*/
+
+.arc-navbar {
+  dispaly: flex;
+  position: fixed;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.arc-navbar-light {
+  background-color: var(--basic-bg);
+  color: black;
+}
+
+.arc-navbar-dark {
+  background-color: #212121;
+  color: white;
+}
+
+.arc-navbar-brand, .arc-navbar-brand-link{
+  font-size: 2rem;
+  float: left;
+  text-decoration: none;
+}
+
+.arc-navbar-brand-light, .arc-navbar-brand-link {
+  color: black;
+}
+
+.arc-navbar-brand-dark {
+  color: white;
+}
+
+.arc-navbar-title a {
+  text-decoration: none;
+}
+
+.arc-navbar-burger {
+  float: right;
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem; /*if the burger was text-based*/
+  font-weight: lighter;
+  padding-right: 1rem;
+}
+
+.arc-navbar-button {
+  float: right;
+  font-size: 1.5rem;
+  margin: 5px;
+  margin-right: 2rem;
+}
+
+.arc-has-navbar-fixed {
+  padding-top: 3.5rem;
+}
+
+
+/*FLOAT*/
+
+.arc-float-right {
+  float: right;
+}
+
+.arc-float-left {
+  float: left;
+}
+
+
+/*ROUND, SHADOW AND SHADOW*/
+
+.arc-rounded {
+  border-radius: 10px;
+}
+
+.arc-shadow {
+  box-shadow: 10px #E0E0E0 10px 10px 0 0;
+}
+
+.arc-negative {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+
+/*IMAGES*/
+
+.arc-img {
+  width: 95%;
+}
+
+.arc-footer-img {
+  max-width: 20%;
+}
+
+.arc-icon {
+ width: 15%; 
+ max-height: 4rem;
+ -webkit-border-radius: 15%;
+ -moz-border-radius: 15%;
+ border-radius: 15%;
+}
+
+
+/*HERO*/
+
+.arc-hero {
+  padding: 1rem;
+}
+
+.arc-hero-dark {
+  background-color: #212121;
+}
+
+.arc-hero-light {
+  background-color: #fafafa;
+}
+
+.arc-hero-title {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.arc-hero-subtitle {
+  color: #414141;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+}
+
+.arc-hero-img {
+  max-width: 75%;
+  align: center;
+}
+
+
+/*LISTS*/
+
+.arc-list-free {
+  list-style-type: none;
+}
+
+
+/*TYPOGRAPHY*/
+
+.arc-arabic {
+  font-family: 'Almarai', sans-serif;
+}
+
+.arc-title {
+  color: black;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.arc-subtitle {
+  color: #424242;
+  letter-spacing: 0.05rem;
+}
+
+.arc-article::first-letter {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.arc-flex {
+  display: flex;
+}
+
+.arc-para {
+  line-height: 1.1rem;
+}
+
+.arc-para-pad {
+  margin-left: 1.5rem;
+}
+
+.arc-flex .arc-para {
+  line-height: relative;
+}
+
+.arc-uppercase {
+  text-transform: uppercase;
+}
+
+.arc-code-block {
+  margin: 5px;
+  padding: 2px;
+  min-width: inherit;
+  max-width: 95%;
+  overflow: scroll;
+  background-color: #fafafa;
+  border-style: solid;
+  border-color: #E0E0E0;
+}
+
+.arc-code {
+  padding: 1.5px;
+  background-color: #fafafa;
+  border-style: solid;
+  border-color: #E0E0E0;
+}
+
+/*LINKS*/
+
+.arc-link {
+  color: var(--primary);
+  text-decoration-color: var(--primary-light);
+}
+
+.arc-footer-link {
+  text-decoration: none;
+  color: var(--primary-light);
+}
+
+/*BUTTONS*/
+
+.arc-button {
+  margin: 2px;
+  padding: 5px;
+  background-color: #fafafa;
+  text-decoration: none;
+}
+
+.arc-button-large {
+  font-size: 1.5rem;
+  padding: 8px;
+  margin: 3px;
+}
+
+.arc-button-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.arc-button-primary-outlined {
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #2979ff;
+}
+
+.arc-button-primary:hover, .arc-button-primary-outlined:hover {
+  animation: buttonHover 0.5s;
+}
+
+
+
+/*
+COMPONENTS
+==========
+*/
+
+
+/*ALERT*/
+
+.arc-alert {
+  color: #212121;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.arc-alert-primary {
+  color: var(--primary);
+  background-color: var(--primary-bg-light);
+}
+
+.arc-alert-danger {
+  color: red;
+  background-color: #ffd6d6;
+}
+
+.arc-alert-success {
+  color: green;
+  background-color: #daffd6;
+}
+
+.arc-alert-regular {
+  color: #212121;
+  background-color: #E0E0E0;
+}
+
+
+/*CARD*/
+
+.arc-card {
+  padding: 5px; 
+  margin: 5px;
+  max-width: 90%
+}
+
+.arc-card-basic {
+  box-shadow: 0 4px 8px 0 var(--shadow-color);
+}
+
+.arc-card-hover:hover {
+  animation-name: shadowOnHover;
+  animation-duration: 0.5s;
+}
+
+
+/*FOOTER*/
+
+.arc-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-color);
+  padding: 5px;
+  margin:0;
+  margin-top: 5px; 
+}
+
+
+/*PROGRESS (UNSTABLE)*/
+
+.arc-progress-container {
+  padding: 0;
+  background-color: var(--progress-bar-bg);
+  border-radius: 10px;
+}
+
+.arc-progress-bar {
+  padding: 5px;
+  border-radius: 10px;
+  transition: width;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(.36,.55,.63,.48);
+}
+
+.arc-progress-bar-primary {
+  background-color: var(--primary);
+  color: var(--primary);
+}
+
+
+/*DIVIDER*/
+
+.arc-divider {
+  width: 95%;
+  height: 0.25rem;
+  background-color: var(--shadow-color)
+}
+
+.arc-divider-gradient {
+ background: linear-gradient(90deg, var(--shadow-color), white);
+}
